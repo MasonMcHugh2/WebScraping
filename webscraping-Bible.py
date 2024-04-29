@@ -24,3 +24,4 @@ my_verses =[]
 
 for section_verses in page_verses:
     print(section_verses.text)
+    input()
