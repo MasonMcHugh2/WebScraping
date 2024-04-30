@@ -20,8 +20,17 @@ soup = BeautifulSoup(webpage,'html.parser')
 
 page_verses = soup.findAll('div',class_='p')
 
-my_verses =[]
+my_verses=[]
 
 for section_verses in page_verses:
-    print(section_verses.text)
-    input()
+    verse_list = section_verses.text.split('  ')
+    #print(verse_list)
+    
+    for v in verse_list:
+        my_verses.append(v)
+
+my_verses =[i for i in my_verses if i != ' ']
+
+mychocie = random.choice(my_verses)
+
+print(f"Chapter: {chapter}   Verse: {mychocie}")

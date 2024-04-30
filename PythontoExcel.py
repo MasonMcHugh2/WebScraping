@@ -16,7 +16,7 @@ ws['A1'] = 'Invoice'
 
 ws['A1'].font = Font(name="Times New Roman",size=24,bold=True)
 
-headerfont = Font(name='TImes New Roman',size=24,bold=True)
+headerfont = Font(name='Times New Roman',size=24,bold=True)
 
 ws['A2'] = 'Tires'
 ws['A3'] = 'Brakes'
